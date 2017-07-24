@@ -173,6 +173,8 @@ public class EndLevelScreen implements Screen {
 			    	}
 		          else if (backToMain.getRect().contains(new Rectangle(touch.x,touch.y,1,1))){
 		        	  backToMain.playSound(0);
+		        	  //set state to zero
+		        	  game.setState(0);
 		        	  game.setScreen(new MainMenuScreen(game));
 		        	  dispose();
 		    	}
@@ -235,6 +237,8 @@ public class EndLevelScreen implements Screen {
 			    	}
 		          else if (backToMain.getRect().contains(new Rectangle(touch.x,touch.y,1,1))){
 		        	  backToMain.playSound(0);
+		        	//set state to zero
+		        	  game.setState(0);
 		        	  game.setScreen(new MainMenuScreen(game));
 		        	  background.stopMusic(0);
 		        	  dispose();
@@ -281,6 +285,8 @@ public class EndLevelScreen implements Screen {
 			    	}
 		          else if (backToMain.getRect().contains(new Rectangle(touch.x,touch.y,1,1))){
 		        	  backToMain.playSound(0);
+		        	//set state to zero
+		        	  game.setState(0);
 		        	  game.setScreen(new MainMenuScreen(game));
 		        	  background.stopMusic(0);
 		        	  dispose();
