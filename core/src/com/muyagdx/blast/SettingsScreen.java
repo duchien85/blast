@@ -25,8 +25,8 @@ public class SettingsScreen implements Screen {
 		this.game = gam;
 		game.rayHandler.setAmbientLight(0.5f, 0.5f, 0.5f, 0.1f);
 		game.settings.getPreferences();
-		fontLang = new FontLocalization();
-		game.font =  fontLang.getFontLocale(game.settings.getLanguage());
+//		fontLang = new FontLocalization();
+//		game.font =  fontLang.getFontLocale(game.settings.getLanguage());
 		selectedLanguage = game.settings.getLanguage();
 		Gdx.app.log("INFO", "Laguage: " + selectedLanguage);
 		background = new Stage();
@@ -156,7 +156,7 @@ public class SettingsScreen implements Screen {
 		 public void dispose(){
 			 	background.stopMusic(0);
 		    	background.dispose();
-		    	fontLang.dispose();
+		//    	fontLang.dispose();
 		    }
 		   
 		

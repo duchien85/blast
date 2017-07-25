@@ -162,4 +162,8 @@ public class Blast extends Game implements ApplicationListener {
 	public void setCurrentMusic(int currentMusic) {
 		this.currentMusic = currentMusic;
 	}
+	public void backToMain(){
+		this.setState(0);
+		this.setScreen(new MainMenuScreen(this));
+	}
 }

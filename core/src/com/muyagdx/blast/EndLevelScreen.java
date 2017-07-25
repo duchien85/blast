@@ -124,6 +124,7 @@ public class EndLevelScreen implements Screen {
 		    Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);    
 		    game.font.setColor(0.9f, 0.96f, 0.89f, 1);
 		    game.font.setScale(2, 2);
+		    //add music
 		    camera.update();
 		    game.batch.setProjectionMatrix(camera.combined);
 		    game.batch.begin();
@@ -174,8 +175,10 @@ public class EndLevelScreen implements Screen {
 		          else if (backToMain.getRect().contains(new Rectangle(touch.x,touch.y,1,1))){
 		        	  backToMain.playSound(0);
 		        	  //set state to zero
-		        	  game.setState(0);
-		        	  game.setScreen(new MainMenuScreen(game));
+//		        	  game.setState(0);
+//		        	  game.setScreen(new MainMenuScreen(game));
+		        	  game.backToMain(); 
+		        	  //stop music
 		        	  dispose();
 		    	}
 		    }
@@ -238,8 +241,7 @@ public class EndLevelScreen implements Screen {
 		          else if (backToMain.getRect().contains(new Rectangle(touch.x,touch.y,1,1))){
 		        	  backToMain.playSound(0);
 		        	//set state to zero
-		        	  game.setState(0);
-		        	  game.setScreen(new MainMenuScreen(game));
+		        	  game.backToMain();
 		        	  background.stopMusic(0);
 		        	  dispose();
 		    	}
@@ -286,8 +288,7 @@ public class EndLevelScreen implements Screen {
 		          else if (backToMain.getRect().contains(new Rectangle(touch.x,touch.y,1,1))){
 		        	  backToMain.playSound(0);
 		        	//set state to zero
-		        	  game.setState(0);
-		        	  game.setScreen(new MainMenuScreen(game));
+		        	  game.backToMain();
 		        	  background.stopMusic(0);
 		        	  dispose();
 		    	}
