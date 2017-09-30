@@ -43,7 +43,7 @@ public class LevelSelect implements Screen {
 		background.setMode(mode); 
 		background.setDirectionX(1);
 		backToMain = new GameObject();
-		backToMain.setImage("quit2.png");
+		backToMain.setImage("quit3.png");
 		backToMain.setRect(new Rectangle(0,410,100,64));
 		circleIcon = new GameObject();
 		camera = new OrthographicCamera();

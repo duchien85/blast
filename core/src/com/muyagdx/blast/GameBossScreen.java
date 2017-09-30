@@ -170,7 +170,7 @@ public class GameBossScreen implements Screen {
 				quit.addSound("bump1.wav");
 				resume.setRect(new Rectangle(400, 220, 64, 64));
 				resume.setImage("lightdropbutton.png");
-				quit.setImage("quit2.png");
+				quit.setImage("quit3.png");
 				quit.setRect(new Rectangle(290, 220, quit.getImage().getWidth(), quit.getImage().getHeight()));
 			}
 			renderPaused(delta);

@@ -37,12 +37,12 @@ public class EndLevelScreen implements Screen {
 		background = new Stage();
 		background.setMode(gameMode);
 		background.setDirectionX(1); /* direction 1 moves to the left if using automove (rethink that)*/
-		background.setImage("trees.png"); //TODO replace with a proper mode background, maybe image of winner in stage
+		background.setImage("bgscore.png"); //TODO replace with a proper mode background, maybe image of winner in stage
         background.setRect(new Rectangle(0,0,800,480));
         background.addMusic("maintheme.mp3"); //TODO replace with mode theme
         background.playMusicLooping(0);
         backToMain = new GameObject();
-		backToMain.setImage("quit2.png");
+		backToMain.setImage("quit3.png");
 		backToMain.setRect(new Rectangle(480,10,64,64));
 		backToMain.addSound("bump1.wav");
 		next = new GameObject();

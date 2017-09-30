@@ -37,7 +37,7 @@ public class ModeSelect implements Screen {
 			backToMain = new GameObject();
 			arrowUp = new GameObject();
 			arrowDown = new GameObject();
-			backToMain.setImage("quit2.png");
+			backToMain.setImage("quit3.png");
 			backToMain.setRect(new Rectangle(0,410,100,64));
 			backToMain.addSound("bump1.wav");
 			arrowUp.setImage("arrow.png");
