@@ -6,19 +6,18 @@ Sample game to practice using LibGDX library to create multiplatform games.
 Feel free to try it out and provide your comments.
 
 
-## Content
+## Guide
 
-- home.html
-Home page for navigation.
+- Select character and weapon
+- Click or touch Begin
+- Start blasting!
+- You start with a single ammo and you need to collect ammo drops or the enemy's missiles to increase yours.
 
-- AdvancedAccordion.html
-Test page to demonstrate using Css3's Panel feature as an accordion. Check jQuery script in accordion.js.
+## Future Plans
 
-- hunt.html
-Mini game where you try to catch the cat by clicking on it. (if you can!)
-
-- collage.html
-Simple image gallery page.
+- Adding quick help
+- Changing the playability to a more interesting game design :D
+- Using professional gfx help!
 
 ## Copyright
 
